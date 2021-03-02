@@ -1,0 +1,16 @@
+---
+  - name: Download nexus binary
+    get_url:
+      url:  https://download.sonatype.com/nexus/oss/nexus-2.14.18-01-bundle.tar.gz
+      dest: /home/centos/nexus.tar.gz
+
+  - name: Extract nexus binary
+    unarchive:
+      src: /home/centos/nexus.tar.gz
+      dest: /home/centos
+      remote_src: yes
+     
+  
+
+  - name: start nexus servers
+    command: nohup /home/centos/nexus-2.14.18-01/bin/nexus start
