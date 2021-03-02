@@ -1,0 +1,14 @@
+---
+  - name: ensure java is installed
+    package:
+      name: java-1.8.0
+      state: latest
+    become: true  
+  - name: ensure javac is installed
+    package:
+      name: java-1.8.0-devel
+      state: latest
+
+...
+
+      

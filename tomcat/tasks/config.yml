@@ -1,0 +1,11 @@
+---
+  - name: Set apache conf
+    template:
+      src: tomcat-users.xml.j2
+      dest: /home/centos/apache-tomcat-7.0.94/conf/tomcat-users.xml
+
+
+
+...
+
+      

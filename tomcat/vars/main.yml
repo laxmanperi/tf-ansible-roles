@@ -1,0 +1,6 @@
+---
+# vars file for apache
+    user_name: tomcat
+    user_pass: tomcat
+    
+

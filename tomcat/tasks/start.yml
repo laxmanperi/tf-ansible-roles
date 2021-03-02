@@ -1,0 +1,8 @@
+---
+  - name: start apache servers
+    command: nohup /home/centos/apache-tomcat-7.0.94/bin/startup.sh
+
+
+...
+
+      
